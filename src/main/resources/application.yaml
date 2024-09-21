@@ -1,1 +1,8 @@
+spring:
+  task:
+    scheduling:
+      cron: 0 10 14 * * ?
 
+
+#Site para verificar expressoes do cron
+#https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm

@@ -11,7 +11,8 @@ import java.time.LocalDateTime;
 public class AgendamentoService {
 
     // Delay fixo a base de milisegundos, ou seja, 1000 = 1 segundo
-    @Scheduled(fixedDelay = 1000)
+    //@Scheduled(fixedDelay = 1000)
+    @Scheduled(cron = "${spring.task.scheduling.cron}")
     public void AgendaTarefas(){
         log.info("Agendado e executado em {}", LocalDateTime.now());
     }
